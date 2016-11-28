@@ -1,4 +1,4 @@
-# Exploration du réseau
+# Chapitre 1 : Exploration du réseau
 
 ## Connecté au monde entier
 
