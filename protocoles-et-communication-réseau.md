@@ -26,7 +26,7 @@ Le message brut, même codé, ne peut etre envoyé tel quel sur le réseau, il f
 
 Par exemple dans le cas d'une trame HTTP on trouve le contenu de la page a affcicher dans les données utilisateur puis une sére d'encapsulation ajoutent des informations a la trame permettant de préciser sa destination, la version des protocoles utilisés, et bien d'autres choses.
 
-![Une trame HTTP](tramehttp.png)
+![Une trame HTTP](img/tramehttp.png)
 
 ### Taille
 
