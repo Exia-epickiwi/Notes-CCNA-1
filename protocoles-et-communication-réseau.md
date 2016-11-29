@@ -185,3 +185,20 @@ Lors de l'emission de données par une application, les données passent par la 
 Lors de la récéption de la trame, les données sont décapulés dans le sens inverse de l'encapsulation.
 
 ![Desencapsulation](img/desen.png)
+
+### Adresses réseau
+
+Pour communiquer, il faut un couple d'adresse.
+
+* **Adresse source** d'ou proviennent les données
+* **Adresse de destination** ou vons les données
+
+Chacune des couches dispose de sa propre methode de transmission mais les adresses ne sont employés que dans la couche réseau et la couche liaison de données.
+
+* **Couche liaison de données** L'adresse est utilisée pour le transfert de carte à carte sur le même réseau
+* **Couche réseau** L'adresse est utilisée de la source jusqu'a la destination même s'il ne sont pas sur le même réseau
+
+![Structure des adresses](img/adressage.png)
+
+
+====> 3.3.2.1 <====
