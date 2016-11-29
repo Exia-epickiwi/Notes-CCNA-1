@@ -195,10 +195,9 @@ Pour communiquer, il faut un couple d'adresse.
 
 Chacune des couches dispose de sa propre methode de transmission mais les adresses ne sont employés que dans la couche réseau et la couche liaison de données.
 
-* **Couche liaison de données** L'adresse est utilisée pour le transfert de carte à carte sur le même réseau
-* **Couche réseau** L'adresse est utilisée de la source jusqu'a la destination même s'il ne sont pas sur le même réseau
+* **Couche liaison de données** (adresse MAC) L'adresse est utilisée pour le transfert de carte à carte sur le même réseau. Ainsi la trame de cette couche change des qu'elle est transfèrée sur une réseau différent par le biais d'un routeur.
+* **Couche réseau** (adresse IP) L'adresse est utilisée de la source jusqu'a la destination même s'il ne sont pas sur le même réseau elle est composée d'une partie réseau et d'une partie hote
 
 ![Structure des adresses](img/adressage.png)
 
-
-====> 3.3.2.1 <====
+====> 3.3.2.2 <====
