@@ -136,3 +136,25 @@ Nous allons traiter ici les normes sans fil de courte ou moyenne portée soit :
 * **WiMax** Une téchnologie sans fil se basant sur une topologie point-à-multipoint pour fournir l'acces au réseau
 
 Mettre en place un réseau local sans fil implique de mettre en place certains systèmes tel qu'un point d'acces sans fil ainsi qu'une carte sans fil sur chaque hote. Les equipements doivent etre choisis avec soins sans quoi, les equipement risuqe une incompatibilité.
+
+## Couche Liaison de données
+
+La couhe liaison de données doit :
+
+* Accepter et encapsuler les paquets de la couche 3
+* Préparer les donnes pour la transmission physique
+* Echanger les trames e,tre les noeuds
+* Recevoir et desencapsuler les paquets pour les couches superieurs
+* Detecter les erreurs
+
+La couche se divise en deux sous couches :
+
+* **Sous couche LLC (Logical Link Control)** Qui place les informations dans la trame final et indique le protocol utilisé pour la transmission
+* **Sous couche d'acces au support (MAC)** définis les processus pour acceder aux supports réseaux et gère les différentes technologies.
+
+La trame de la couche 2 est amené a changé des que la trame quitte un réseau spécifique au travers d'un routeur. Il est aussi possible que les protocoles utilisés pour la transmission ne soit pas IP mais les données restent les mêmes.
+
+
+A suivre :wink:
+
+=====>4.3.1.4<====
