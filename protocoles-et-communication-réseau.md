@@ -199,5 +199,3 @@ Chacune des couches dispose de sa propre methode de transmission mais les adress
 * **Couche réseau** (adresse IP) L'adresse est utilisée de la source jusqu'a la destination même s'il ne sont pas sur le même réseau elle est composée d'une partie réseau et d'une partie hote
 
 ![Structure des adresses](img/adressage.png)
-
-====> 3.3.2.2 <====
