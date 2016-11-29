@@ -110,7 +110,7 @@ Avoir une norme ouverte permet de :
 
 Une norme ouverte est gèrée par une organisme de normalisation qui est, le plus souvent, une association a but non lucratif qui ne sont liés a aucun constructeurs
 
-Voici les organismes de normalisation des normes inetrnet : 
+### Organismes de normalisation Internet
 
 * **ISOC** Pour Internet Society, en charge de la promotion d'un internet libre
 * **IAB** Pour Internet archithecture Board, un comité en charge de la gestion et de développement des normes internet
@@ -118,3 +118,19 @@ Voici les organismes de normalisation des normes inetrnet :
 * **IRTF** Pour Internet Research Task Force, un groupe de travail de recherche à long terme sur Internet et TCP/IP dans le comaine de la cryptographie, de l'anti-spam et du peer-to-peer
 * **ICANN** Pour Internet Corporation for Assigned Names and Numbers, une association qui coordonne l'attribution des adresses IP et la gestion des noms de domaine
 * **IANA** Pour Internet Assigned Numbers Authority, une autorité chargée de superviser les adresse IP et les protocoles utilisés pour l'ICANN
+
+### Organismes de normalisations electroniques et communication
+
+* **IEEE** Pour Institute of Electrical and Electronics Engineers
+* **EIA** Pour Electronic Industries Alliance, alliance commercial de normalisation de cables et des communications en racks notemment
+* **TIA** Pour Telecommunications Industry Association, une association responsable des normes de communications dans de nombreux domaines
+* **ITU-T** Pour Secteur de la normalisation des télécommunications de l'Union internationale des télécommunications, l'un des plus anciens organismes de normalisation qui definis les normes de compression video notemment.
+
+## Modèle en couches
+
+Nous représentons maintenant notre réseau en couches successives en suivant 2 modèles :
+
+* **Modèle protocol** Ce modèle suite une suite de protocole définis, cette fonction est assurée par le modèle TCP/IP
+* **Modèle réferant** Assure une cohérence générale de chaque opération à effectuer dans chaque couche, ce modèle est assuré par le modèle OSI
+
+![Comparaison des deux modèles](img/deuxmodèles.png)
