@@ -61,6 +61,3 @@ Il existe de nombreuses suites des protocoles mais en voici quelques exemples
 
 Nous allons ici nous concentrer sur le protocole TCP/IP
 
-À suivre :wink:
-
-====> 3.2.2.2 <====
