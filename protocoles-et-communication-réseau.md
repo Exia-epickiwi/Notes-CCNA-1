@@ -72,7 +72,7 @@ Les protocoles sont empilés en couches. Pour utiliser un protocol application, 
 ### Protocoles application
 
 * **DNS** Pour Domaine Name System, permet de traduire le noms de domaine en adresses IP
-* **BOOTP** Prédécesseur de DHCP, il permet a une pachien de connaitre son IP sur le réseau
+* **BOOTP** Prédécesseur de DHCP, il permet a une machine de connaitre son IP sur le réseau
 * **DHCP** Pour Dynamic Host Configuration, attribue dynamiquement des adresses IP aux clients et permet de réutiliser les adresses ip non utilisés.
 * **SMTP** Pour Simple Mail Transfert Protocol, permet aux client d'envoyer un email a un serveur de messagerie et au serveur d'envoyer ce mail à d'autres serveurs
 * **POP** Pour Post Office Protocol, permet de récupèrer des emails depuis un serveur de messagerie, ces emails sont téléchargés du serveur vers le bureau
@@ -100,3 +100,21 @@ Les protocoles sont empilés en couches. Pour utiliser un protocol application, 
 * **PPP** Pour Piont-to-point Protocol, permet d'encapsuler les paquets pour les transmettre par une connexion série
 * **Ethernet** Le protocol le plus utilisé en local permettant de définir les rêgles de cablage et de signalisation
 * **Pilotes d'interface** Donne les instructions à l'ordinateur pour communiquer avec ses interfaces réseau
+
+## Normes ouvertes
+
+Avoir une norme ouverte permet de :
+
+* Favoriser l'intercompatibilité des produits
+* Empecher le monopole d'un produit
+
+Une norme ouverte est gèrée par une organisme de normalisation qui est, le plus souvent, une association a but non lucratif qui ne sont liés a aucun constructeurs
+
+Voici les organismes de normalisation des normes inetrnet : 
+
+* **ISOC** Pour Internet Society, en charge de la promotion d'un internet libre
+* **IAB** Pour Internet archithecture Board, un comité en charge de la gestion et de développement des normes internet
+* **IETF** Pour Internet Engineering Task Force, un groupe de travail chargé de développer, mettre à jour et gèrer les téchnologies internet et TCP/IP par les documents de normalisation comme les RFC
+* **IRTF** Pour Internet Research Task Force, un groupe de travail de recherche à long terme sur Internet et TCP/IP dans le comaine de la cryptographie, de l'anti-spam et du peer-to-peer
+* **ICANN** Pour Internet Corporation for Assigned Names and Numbers, une association qui coordonne l'attribution des adresses IP et la gestion des noms de domaine
+* **IANA** Pour Internet Assigned Numbers Authority, une autorité chargée de superviser les adresse IP et les protocoles utilisés pour l'ICANN
