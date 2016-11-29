@@ -73,3 +73,5 @@ Les cables sont divisés en catégories permettant un plus ou moins gros débit
 |5|100 MBit/s|
 |5e et 6|1000 MBit/s|
 |6e|10 GBit/s|
+
+![Schémats des cables UTP](img/utpcabl.png)
