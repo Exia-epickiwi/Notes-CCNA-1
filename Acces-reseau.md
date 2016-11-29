@@ -86,3 +86,23 @@ Pour parfaitement repondre aux attentes, on doit corrèctement choisir les cable
 
 ![Les connecteurs UTP](img/connecteursutp.png)
 
+### Fibre Optique
+
+La fibre optique est un fil pur et transparent de la taille d'un cheveux humain. Les données sont codées par des impultions lumineuses. On utilise la fibre optique pour relier des périphériques réseaux le plsu souvent car elle permet des débits tres important qu'elle est la seul a pouvoir supporter.
+
+La technologe de fibre optique est actuellement utilisée dans :
+
+* Les réseaux d'entreprise
+* La technologie FTTH (Fiber to the home)
+* Les réseaux de longue distance
+* Les réseaux sous marins
+
+La fibre optique se compose :
+
+* D'un **coeur** transmettant la lumière
+* D'une **enveloppe** Fonctionnant comme un miroir réfléchissant la lumière du coeur
+* D'un **tampon** protegeant le coeur
+* D'un **renforcement** evitant l'etirement de la fibre
+* D'une **gaine** protegant le tout
+
+![Representation d'une fibre optique](img/fibre.png)
