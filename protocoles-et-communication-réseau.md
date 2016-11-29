@@ -154,4 +154,28 @@ Composé de seulement 4 couches définis par les protocoles utilisés :
 * **4.Application** Les données utiles pour l'utilisateur et les controles de dialogues
 * **3.Transport** Prend en charge la communication entre plusieurs périphériques au travers du réseau
 * **2.Internet** Determine le meilleur chemin réseau
-* **1.Acces réseau** Contrôle les périphériques matériels et les supports qui constituent le réseau.
+* **1.Acces réseau** Contrôle les périphériques matériels et les supports qui constituent le réseau
+
+## Transfert de données
+
+Les données à transferer ne peuvent être envoyées toute d'un coup car cela poserais des problèmes de données. Il faut prendre en compte deux systèmes permettant d'optimiser le flux de données et de donner la possibilité a tous de communiquer
+
+### Segmentation
+
+Pour réduire la quantitée des données à transmettre, on divise les données en plusieurs trames différentes.
+
+### Multiplexage
+
+Pour donner la chance à chaque hote sa chance de communiquer on entremèle les données de chaque hote permettant de mixer les paquets transmis.
+
+### Transformation des trames
+
+Lors de l'emission de données par une application, les données passent par la pile de protocoles permettant d'encapuler les données pour finir sur le canal de communication.
+
+1. Les donnes sont constutués pour être envoyés
+2. Les données sont divisés en segments
+3. Les segments sont encapsulés suivant la pile de protocoles
+4. Les paquets sont constitués pour être envoyés sur le réseau
+5. Les bits de la trame sont voyés sur le support physique
+
+![Pile d'encapsulation](img/pileproto.png)
