@@ -24,6 +24,10 @@ Pour les besoins de la transmission, les données qui vons etre envoyés doivent
 
 Le message brut, même codé, ne peut etre envoyé tel quel sur le réseau, il faut lui fournir d'autre informations comme le destinatire de la lettre ou l'éxpéditeur. Ces informations sont ajoutés au début ou a la fin du message à envoyé. L'encapsulation consiste alors en l'ajout d'informations au message brut en fonction des informations requises par le réseau. L'ensemble du message encapsulé est appelé *trame* et peut etre envoyé sur le réseau. Il peut y avoir plusieurs phases d'encapsulation d'un message.
 
+Par exemple dans le cas d'une trame HTTP on trouve le contenu de la page a affcicher dans les données utilisateur puis une sére d'encapsulation ajoutent des informations a la trame permettant de préciser sa destination, la version des protocoles utilisés, et bien d'autres choses.
+
+![Une trame HTTP](tramehttp.png)
+
 ### Taille
 
 Pour réspècte le protocol utilisé pour la transmission, le message peut etre divisée en plusieurs *trames* permettant ainsi de ne pas engorger le réseau.
@@ -62,3 +66,37 @@ Il existe de nombreuses suites des protocoles mais en voici quelques exemples
 La suite de protocoles TCP/IP se compose aujourd'hui beaucoup de protocoles donnés dans la figure suivante.
 
 ![Suite de protocoles TCP/IP](img/protocolsEnCouches.png)
+
+Les protocoles sont empilés en couches. Pour utiliser un protocol application, on a alors besoin d'utiliser un ou plusieurs protocoles par couche inferieur et d'effectuer l'encapsulation.
+
+### Protocoles application
+
+* **DNS** Pour Domaine Name System, permet de traduire le noms de domaine en adresses IP
+* **BOOTP** Prédécesseur de DHCP, il permet a une pachien de connaitre son IP sur le réseau
+* **DHCP** Pour Dynamic Host Configuration, attribue dynamiquement des adresses IP aux clients et permet de réutiliser les adresses ip non utilisés.
+* **SMTP** Pour Simple Mail Transfert Protocol, permet aux client d'envoyer un email a un serveur de messagerie et au serveur d'envoyer ce mail à d'autres serveurs
+* **POP** Pour Post Office Protocol, permet de récupèrer des emails depuis un serveur de messagerie, ces emails sont téléchargés du serveur vers le bureau
+* **IMAP** Pour Internet Message Access Protocol, permet d'accèder aux emails d'un serveur de messagerie et conserve ces email a distance
+* **FTP** Pour File Transfert Protocol, définis les rêgles qui permettent à l'utilisateur d'un hôte d'accèder à des fichiers sur un autre hôte du réseau et de transfèrer des fichier vers cet hote distant
+* **TFTP** Pour Trivial file transfert protocol, permet de transfèrer des fichiers simples sans connexion et sans accusé de réception
+* **HTTP** Pour Hypertext Transfer Protocol, permet de transfèrer des mesdias, textes et graphiques sur le web.
+
+### Protocoles de transport
+
+* **UDP** Pour User datagram Protocol, permet de transferer des paquet d'un hote vers un autre sans accusé de réception.
+* **TCP** Pour Transmission Control Protocol, permet une communication fiable entre les processus de deux hotes distants avec accusé de réception
+
+### Protocoles Internet
+
+* **IP** Pour Internet Protocol, permet de regrouper les messages en paquets et indiquer l'adresse de destination
+* **NAT** Permet de convertir les adresses locales en adresses globales sur le réseau mondial
+* **ICMP** Pour Internet Control Message Protocol, permet de signaler a l'hote distant les érreur survenues lors de la transmission
+* **OSPF** Pour Open Shortest Path First, permet de router les paquets dans la bonne direction par une conception hierarchique des zones
+* **EIGRP** Pour Enhaces Interior Gateway Routing Protocol, un protocol propriétaire Cisco permettant de donner une métrique apropriée en fonction de la bande passante
+
+### Protocoles d'acces réseau
+
+* **ARP** Pour Address Resolution Protocol, Fournis un mappage dynamique entre une adresse IP et une adresse physique
+* **PPP** Pour Piont-to-point Protocol, permet d'encapsuler les paquets pour les transmettre par une connexion série
+* **Ethernet** Le protocol le plus utilisé en local permettant de définir les rêgles de cablage et de signalisation
+* **Pilotes d'interface** Donne les instructions à l'ordinateur pour communiquer avec ses interfaces réseau
