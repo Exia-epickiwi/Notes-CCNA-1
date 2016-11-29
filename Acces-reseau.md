@@ -85,3 +85,4 @@ Pour parfaitement repondre aux attentes, on doit corrèctement choisir les cable
 * **Câble inversé** Réservé à cisco, il permet une communication entre le prot série d'une machine et le port console d'un routeur.
 
 ![Les connecteurs UTP](img/connecteursutp.png)
+
