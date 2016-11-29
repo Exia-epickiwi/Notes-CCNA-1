@@ -59,5 +59,6 @@ Il existe de nombreuses suites des protocoles mais en voici quelques exemples
 
 ![Quelques piles de protocoles](img/protocoles.png)
 
-Nous allons ici nous concentrer sur le protocole TCP/IP
+La suite de protocoles TCP/IP se compose aujourd'hui beaucoup de protocoles donnés dans la figure suivante.
 
+![Suite de protocoles TCP/IP](img/protocolsEnCouches.png)
