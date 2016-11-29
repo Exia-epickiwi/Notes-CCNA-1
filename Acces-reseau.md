@@ -106,3 +106,33 @@ La fibre optique se compose :
 * D'une **gaine** protegant le tout
 
 ![Representation d'une fibre optique](img/fibre.png)
+
+Les signaux sont envoyés dans un fibre optique par le biais d'une DEL ou d'un laser. Mais les cables de fibre optique sont classés en deux types:
+
+* **(SMF) Fibre Monomode** Le coeur est réduit et le lase est utilisé pour transmettre les donnés, la lumière passe de manière droite dans le coeur et ainsi empeche la dispersion; on l'utilise pour le transport de longue distance (100 Km minimum) car cette téchnologie est couteuse
+* **(MMF) Fibre Multimode** Le coeur est plus large et utilise une DEL pour envoyer le signal; la lumière est réfléchie sur l'enveloppe et permet une transmission moins couteuse mais une dispertion plus importante; elle offre un debit de 10GBit/s sur 550 metres maximum
+
+Les fibres optiques utilisent des types de connècteurs spécifiques :
+
+* **ST** L'un des premiers connècteurs produits, il se connècte a l'aide d'une baillonette à tourner
+* **SC** Un connecteur de forme carrée se clipsant pour verifier la connexion
+* **LC** Une version réduite du connecteur SC
+* **LC bidirectionnel** Dispose de deux connècteurs pour une connexion bidirectionnel
+
+Dans tout les cas, une fibre optique est monodirectionnel, il est ainsi requis de connècter deux fibres.
+
+On choisira la fibre optique sur des installation nécéssitant un fort traffic comme les point d'entrée pour entrprise mais on préfèrera un réseau en cuivre pour disperser de maniere individuelle les acces au réseau car la technologie de fibre est encore couteuse et difficile à maintenir.
+
+### Sans fil
+
+Le sans fil est un réseau qui se déploie rapidement due aux nouveaux périphériques et nouveaux usages. En revanche la communication sans fil impose une zone de couverture résetreinte, des interferances plus présentes, une sécurité moins importante et un support partagé par de multiples appareils pouvant être surchargé.
+
+Le sans fil impose que les bits sont codés sur un signal radio et implique du materiel spécifique pour emettre et recevoir ce type de connexion.
+
+Nous allons traiter ici les normes sans fil de courte ou moyenne portée soit : 
+
+* **WiFi** La téchnologie WLAN se basant sur loe protocole CSMA/CA; La carte réseau commence par écouter avant d'emettre pour eviter toute collision
+* **Bluetooth** Une téchnologie de réseau personnel (SAN) utilisant un protocole de jumelage et permettant une communication sur 100m maximum
+* **WiMax** Une téchnologie sans fil se basant sur une topologie point-à-multipoint pour fournir l'acces au réseau
+
+Mettre en place un réseau local sans fil implique de mettre en place certains systèmes tel qu'un point d'acces sans fil ainsi qu'une carte sans fil sur chaque hote. Les equipements doivent etre choisis avec soins sans quoi, les equipement risuqe une incompatibilité.
