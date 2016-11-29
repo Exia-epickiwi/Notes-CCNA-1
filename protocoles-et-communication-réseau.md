@@ -134,3 +134,24 @@ Nous représentons maintenant notre réseau en couches successives en suivant 2 
 * **Modèle réferant** Assure une cohérence générale de chaque opération à effectuer dans chaque couche, ce modèle est assuré par le modèle OSI
 
 ![Comparaison des deux modèles](img/deuxmodèles.png)
+
+### Modèle OSI
+
+Le modèle ISO se constitue de 7 couches successives : 
+
+* **7.Application** Contient des protocoles utilisés pour les communications de processus à processus
+* **6.Présentation** Fournit une représentation commune des données transférées entre des services de couche application
+* **5.Session** Fournit des services à la couche présentation pour organiser son dialogue et gérer l'échange de données
+* **4.Transport** Définit des services pour segmenter, transférer et réassembler les données de communications individuelles entre les périphériques finaux
+* **3.Réseau** Fournit des services pour échanger les parties de données individuelles sur le réseau entre des périphériques finaux identifiés
+* **2.Liaison de données** Liaison de données décrivent des méthodes d'échange de trames de données entre des périphériques sur un support commun
+* **1.Physique** Décris les moyens mécaniques, électriques, fonctionnels et méthodologiques permettant d'activer, de gérer et de désactiver des connexions physiques pour la transmission de bits vers et depuis un périphérique réseau.
+
+### Modèle TCP/IP
+
+Composé de seulement 4 couches définis par les protocoles utilisés :
+
+* **4.Application** Les données utiles pour l'utilisateur et les controles de dialogues
+* **3.Transport** Prend en charge la communication entre plusieurs périphériques au travers du réseau
+* **2.Internet** Determine le meilleur chemin réseau
+* **1.Acces réseau** Contrôle les périphériques matériels et les supports qui constituent le réseau.
