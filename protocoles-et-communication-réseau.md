@@ -179,3 +179,9 @@ Lors de l'emission de données par une application, les données passent par la 
 5. Les bits de la trame sont voyés sur le support physique
 
 ![Pile d'encapsulation](img/pileproto.png)
+
+### Desencapsulation
+
+Lors de la récéption de la trame, les données sont décapulés dans le sens inverse de l'encapsulation.
+
+![Desencapsulation](img/desen.png)
