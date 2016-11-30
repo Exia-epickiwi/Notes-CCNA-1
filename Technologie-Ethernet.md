@@ -96,3 +96,7 @@ Apres cette requète seul la machine correspondant a l'IP renseingnée dans le c
 Les entrées de la table de mappage sont rapidement éffacés si elles ne sont pas utilisés depuis un certains temps mais cela dépends du système d'exploitation.
 
 Pour afficher la table de mappage on peut utiliser la commande `show ip arp` sur les appreils cisco ou `arp -a` sur windows 7.
+
+Si de nombreuses demandes ARP sont diffusés en même temps sur un réseau a faible bande passante cela peut inonder le réseau, mais ce genre de perte de performances reste minimes.
+
+Certains pirates peuvent se faire passer pour un autre périphérique en répondant à certaines requètes ARP qui ne lui sont pas destinées et ainsi empoisonner la table de mappage du client.
