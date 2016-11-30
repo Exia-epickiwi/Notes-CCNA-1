@@ -1,2 +1,2 @@
-subl3 *.tex
+subl3 .
 gnome-terminal --command "sh -c \"inotifywait -m -q -r -e CLOSE_WRITE --timefmt=\\\"%d/%m %H:%M\\\" --format=\\\"git add -A && git commit -m 'File %w%f changed %T'\\\" ./ --exclude '\.git' | sh\""

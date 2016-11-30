@@ -152,7 +152,9 @@ La couche se divise en deux sous couches :
 * **Sous couche LLC (Logical Link Control)** Qui place les informations dans la trame final et indique le protocol utilisé pour la transmission
 * **Sous couche d'acces au support (MAC)** définis les processus pour acceder aux supports réseaux et gère les différentes technologies.
 
-La trame de la couche 2 est amené a changé des que la trame quitte un réseau spécifique au travers d'un routeur. Il est aussi possible que les protocoles utilisés pour la transmission ne soit pas IP mais les données restent les mêmes.
+La trame de la couche 2 est amené a changé des que la trame quitte un réseau spécifique au travers d'un routeur. Il est aussi possible que les protocoles utilisés pour la transmission ne soit pas IP mais les données restent les mêmes. Ainsi, la trame de la couche 2 est renouvellée à chaque tronçon de réseau qu'elle traverse. Des qu'une trame arrive sur un appareil de couche 3, il désencapsule la trame de couche 2 puis la réencapsule selon le protocol utilisé pour trasmettre les données sur le tronçon suivant.
+
+C'est L'IEE, l'UIT, l'ISO et l'ANSi qui norment les trames de couche 2.
 
 
 A suivre :wink:
