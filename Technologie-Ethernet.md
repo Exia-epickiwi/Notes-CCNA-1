@@ -63,3 +63,15 @@ Le plus souvent l'adresse MAc est gravée dans la mémoire morte de la carte ré
 
 Quand un paquet attein la carte réseau, la carte réseau compare l'adresse MAC de destination par rapport a celle stockée en mémoire vive et interprète le paquet s'il est la destination.
 
+Les commutateurs utilisent deux types de methodes pour transferer les trames vers le port associé :
+
+* **Cut-Through** Achemine la trame avant qu'elle ne soit complètement lue et ne contrôle pas les érreurs; dans la variante fast-forward, les donnes sont immediatement transmises et cela peut poser certains problèmes mais permet un fort débit;La seconde variant Fragment-free consiste a stocker les 64 premier octets avant de conclure a un port vers lequel communiquer et procèder a un petit check des érreurs de trames
+* **Store and Forward** Enregistre la trame dans la mémoire et pendant que la trame est en train d'etre enregistrée, le commutateur décide du port vers lequel acheminer la trame et procède a un test de redondance cyclique (CRC) en analysant l'en-queue de la trame pour vérifier que la trame et valide pour ne pas engorger le réseau de données invalides.
+
+Pour permettre une bonne transmission, les commutateurs sont munis de mémoire tampons pouvant etre de deux types :
+
+* **Axé sur les ports** Les trames sont stockés dans les files d'attente associés à chaque port entrant et sortant; les donnes sont trasmises des que le port se libère
+* **Mémoire partagée** Un seul mémoire reprend toutes les trames et le port de destination est alloué dynamiquement
+
+Le protocol ethernet peut fonctionner en semi-duplex ou en duplex integral, lros d'une connexion aun commutateur ou un autre périphérique, les deux périphériques échanges pour choisir le meill moyen de transmission en fonction du système offrant la meilleur bande passante. Si on ne s'acorede pas on risque beaucoup de collisions sur le canal.
+
