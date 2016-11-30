@@ -77,3 +77,9 @@ Le protocol ethernet peut fonctionner en semi-duplex ou en duplex integral, lros
 
 Un autre point sur lequel s'accorder est le type de cable utilisé. Pour eviter une configuration, on utilise le système Auto-MDIX permettant, par de multiples exhanges entre commutateur et autre périphérique de conclure au type de cable utilisé et ainsi de modifier les configurations en conséquence.
 
+## ARP
+
+Si l'adresse IP de destination n'appartiens pas au réseau actuel, la machine l'envoie automatiquement a la passerelle, une machine de couche 3 permettant de faire la liaison avec un réseau distant.
+
+Pour associer une adresse IP auxs adresses MAc le long tu chemin on tulise le protocole ARP.
+
