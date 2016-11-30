@@ -183,6 +183,11 @@ La topologie d'un réseau est son organisation des périphériques qu'il contien
 
 ![Topologies LAN](img/topologiesLAN.png)
 
+Dans chaque réseau la communication peut se faire selon deux types d'organisation : 
+
+* **Communication en mode Semi-Duplex** Utilisé sur les anciens réseaux et les réseaux sans fil, les hotes peuvent communiquer dans les deux sens mais pas en simultané
+* **Communication en mode Duplex Integral** Les deux périphériques peuvent converser dans les deux sans simultanement en prenant en compte qu'ils ont toujours l'autorisation de communiquer.
+
 A suivre :wink:
 
 =====>4.4.3.1<====
