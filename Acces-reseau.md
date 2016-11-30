@@ -177,6 +177,9 @@ La topologie d'un réseau est son organisation des périphériques qu'il contien
 ### Topologies LAN
 
 * **Étoile** Chacue périphérique final est relié à un périphérique intermedietre central; Cette topologie présente une facilité de mise en place et d'evolution; elle est donc tres utilisée
+* **Étoile étendue** Dans un système étendue, les périphériques intermédières sont reliés entre eux et constituent chacun un point centrale d'un ensemble en étoile
+* **Bus** Une topologie ou tout les périphériques sont relés entre eux dans une chaine qui se termine sur des bouchons de terminaison; Les commutateurs ne sont, ici, pas nécéssaires; La topologie en bus etait tres utilisée il y a quelques années pour leur facilité d'installation et d'utilisation
+* **Anneau** Chacun des hotes est relié a son voisin, ce qui forme un anneau et ainsi n'on pas besoin d'être terminés; cette topologie est utilisée dans les réseau FDDI (Fiber Distribued Data Interface) et Token Ring.
 
 ![Topologies LAN](img/topologiesLAN.png)
 
