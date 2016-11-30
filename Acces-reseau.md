@@ -165,7 +165,13 @@ La topologie d'un réseau est son organisation des périphériques qu'il contien
 * **Topologie physique** montrant les relations physiques des péripheriques entre eux par des cables
 * **Topologie logique** montrant les relations entre les noeuds du réseau et la ménière par laquelle ils communiquent. On represente alors des connexion virtuelles entre les noeuds du réseau.
 
+### Topologies WAN
 
+* **Poit à point** La topologie la plus simple composée d'une connexion permanente entre deux points
+* **Hub and Spoke** La version WAN de la topologie LAN en étoile. Un point central conncete un certain nombre de point périphériques.
+* **Maillée** Une topologie permettant une haute disponibilité mais impliquant que chacun des points 
+
+![Topologies WAN](img/topologiesWAN.png)
 
 A suivre :wink:
 
