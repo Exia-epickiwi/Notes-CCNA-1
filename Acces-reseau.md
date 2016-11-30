@@ -190,8 +190,12 @@ Dans chaque réseau la communication peut se faire selon deux types d'organisati
 
 Chacun des hotes doit ensuitAccès avec gestion des conflits Accès avec gestion des conflits e savoir quand il peut envoyer des données su rle réseau car une seul trame peut circuler a la fois sur un même réseau. On peut alors mettre en place un **Acces controlé** ou chacun des hotes emet quand c'est son tour. Ce type d'echange etait utilisé dans les réseau token rings mais est peu éfficace. On peut alors utiliser une système de **gestion des conflits** autorisant tout les hotes a emettre a tout moment mais prends des mesure pour éviter les colisisions comme dans le protocol ethernet.
 
-Sur un réseau semi-duplex, on met en place un système de gestion des conflits *CSMA/CD*. dans ce système, chaque carte réseau vérifie avant chaque émission qu'aucune émission n'est deja en cours. L'emission commence sensuite. Comme l'adresse de destination est spécifiée, toutes la mcachines ne possèdant pas cette adresse ne prennent pas en compte la trame. Si une collision viens a se produir, les carte réseau la détecte et envoie un signal avertissant qu'il faut renouveler l'envoie.
+Sur un réseau semi-duplex, on met en place un système de gestion des conflits *CSMA/CD*. dans ce système, chaque carte réseau vérifie avant chaque émission qu'aucune émission n'est deja en cours. L'emission commence sensuite. Comme l'adresse de destination est spécifiée, toutes la mcachines ne possèdant pas cette adresse ne prennent pas en compte la trame. Si une collision viens a se produir, les carte réseau la détecte et envoie un signal avertissant qu'il faut renouveler l'envoie. Une alternative est le système *CSMA/CA* dans lequel, chacun des hotes essayent d'eviter la colision en estimant le temps requis pour transmettre les données. 
+
+## Trame
+
+La couche liaison de données encapsule les données précédemment encapsulés par les autres couches dans une trame composé d'en-têtes, des données et d'une queue de bande. Tout les protocoles de cette couche suivent ce système, seul diffère la taille de ces éléments en fonction de l'environnement. En effet, plus des informations sont successible d'être perdues plus il faut d'informations pour les reconstituer et ainsi de plus grands en-têtes et donc un débit moins important.
+
+L'encapsulation des données par la couche 2 s'appelle le *verouillage de la trame* 
 
 A suivre :wink:
-
-=====>4.4.3.1<====
