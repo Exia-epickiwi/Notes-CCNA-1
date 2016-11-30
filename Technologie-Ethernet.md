@@ -83,3 +83,16 @@ Si l'adresse IP de destination n'appartiens pas au réseau actuel, la machine l'
 
 Pour associer une adresse IP auxs adresses MAc le long tu chemin on utilise le protocole ARP permettant de résoudre les adresses MAC et de tenir une table de mappage.
 
+Pour résoudre les adresse MAC a partir de l'adresse IP d'un périphérique, il consulte la table de mappage contenu dans sa mémoire vive. Si l'adresse MAC correspondante n'est pas présente, il envoie une requète ARP sur le réseau.
+
+Une requète ARP contiens dans son corps, soit l'adresse IP cible soit l'adresse MAC cible dont il faut completer le couple. Et la trame ethernet de ce type de requète contien en en-tete :
+
+* **L'adresse MAC de diffusion** permettant à chacun de répondre
+* **L'adresse MAC source** de la machine emettrice
+* **Le type de trame** soit 0x806 dans le cas d'une requète ARP
+
+Apres cette requète seul la machine correspondant a l'IP renseingnée dans le corps répond avec l'adresse IP de l'expediteur et son adresse MAC. Et s'accompagne d'une trame ethnet standard de monodiffusion avec le type ARP. Des que le périphérique éméteur reçoi la réponse il l'ajout à sa table de mappage et envoie la trame prévue.
+
+Les entrées de la table de mappage sont rapidement éffacés si elles ne sont pas utilisés depuis un certains temps mais cela dépends du système d'exploitation.
+
+Pour afficher la table de mappage on peut utiliser la commande `show ip arp` sur les appreils cisco ou `arp -a` sur windows 7.
