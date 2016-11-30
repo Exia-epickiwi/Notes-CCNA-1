@@ -61,5 +61,5 @@ Une adresse MAC est constituée de deux parties de 24 Bits, l'une définie par l
 
 Le plus souvent l'adresse MAc est gravée dans la mémoire morte de la carte réseau, elle est ainsi dite rémanente (BIA). On peut toutefois la changer logiciellement dans le système d'exploitation. Lors du démarrage, cette adressé rémanente est stockée dans la mémoire vive pour etre utilisée.
 
-Quand un paquet attein la carte réseau, la carte réseau compare l'adresse MAC de destination par rapport a celle stoquée en mémoire vive et interprète le paquet s'il est la destination.
+Quand un paquet attein la carte réseau, la carte réseau compare l'adresse MAC de destination par rapport a celle stockée en mémoire vive et interprète le paquet s'il est la destination.
 
