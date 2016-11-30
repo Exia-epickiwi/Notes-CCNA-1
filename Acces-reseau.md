@@ -156,6 +156,16 @@ La trame de la couche 2 est amené a changé des que la trame quitte un réseau 
 
 Ce sont L'IEE, l'UIT, l'ISO et l'ANSi qui norment les trames de couche 2.
 
+## Topologies
+
+Pour accèder au réseau, la sous couche MAC (acces réseau) met en place des rêgles permettant a chacun d'envoyer et de recevoir des données sans collision. Ces regles dépendent de la topologie du réseau et du système de partage du spport physique.
+
+La topologie d'un réseau est son organisation des périphériques qu'il contiens. On peut en différencier deux représentations :
+
+* **Topologie physique** montrant les relations physiques des péripheriques entre eux par des cables
+* **Topologie logique** montrant les relations entre les noeuds du réseau et la ménière par laquelle ils communiquent. On represente alors des connexion virtuelles entre les noeuds du réseau.
+
+
 
 A suivre :wink:
 
