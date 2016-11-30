@@ -75,3 +75,5 @@ Pour permettre une bonne transmission, les commutateurs sont munis de mémoire t
 
 Le protocol ethernet peut fonctionner en semi-duplex ou en duplex integral, lros d'une connexion aun commutateur ou un autre périphérique, les deux périphériques échanges pour choisir le meill moyen de transmission en fonction du système offrant la meilleur bande passante. Si on ne s'acorede pas on risque beaucoup de collisions sur le canal provenant du système en semi-duplex.
 
+Un autre point sur lequel s'accorder est le type de cable utilisé. Pour eviter une configuration, on utilise le système Auto-MDIX permettant, par de multiples exhanges entre commutateur et autre périphérique de conclure au type de cable utilisé et ainsi de modifier les configurations en conséquence.
+
