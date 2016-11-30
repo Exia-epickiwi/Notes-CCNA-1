@@ -46,4 +46,6 @@ La trame ethernet se présente comme suit, sa taille peut varier entre 64 et 1.5
 
 ## Appartai sur l'hexa
 
+L'hexadécimale est le système d'ecriture des adresses MAC et des adresses IP. Il se présente comme une système de nombre de 0 a 9 et de A a F dont les équivalences sont faites dans le tableau ci dessous
+
 ![Table d'equivalence hexadecimal](img/hexa.png)
