@@ -188,6 +188,10 @@ Dans chaque réseau la communication peut se faire selon deux types d'organisati
 * **Communication en mode Semi-Duplex** Utilisé sur les anciens réseaux et les réseaux sans fil, les hotes peuvent communiquer dans les deux sens mais pas en simultané
 * **Communication en mode Duplex Integral** Les deux périphériques peuvent converser dans les deux sans simultanement en prenant en compte qu'ils ont toujours l'autorisation de communiquer
 
+Chacun des hotes doit ensuitAccès avec gestion des conflits Accès avec gestion des conflits e savoir quand il peut envoyer des données su rle réseau car une seul trame peut circuler a la fois sur un même réseau. On peut alors mettre en place un **Acces controlé** ou chacun des hotes emet quand c'est son tour. Ce type d'echange etait utilisé dans les réseau token rings mais est peu éfficace. On peut alors utiliser une système de **gestion des conflits** autorisant tout les hotes a emettre a tout moment mais prends des mesure pour éviter les colisisions comme dans le protocol ethernet.
+
+Sur un réseau semi-duplex, on met en place un système de gestion des conflits *CSMA/CD*. dans ce système, chaque carte réseau vérifie avant chaque émission qu'aucune émission n'est deja en cours. L'emission commence sensuite. Comme l'adresse de destination est spécifiée, toutes la mcachines ne possèdant pas cette adresse ne prennent pas en compte la trame. Si une collision viens a se produir, les carte réseau la détecte et envoie un signal avertissant qu'il faut renouveler l'envoie.
+
 A suivre :wink:
 
 =====>4.4.3.1<====
