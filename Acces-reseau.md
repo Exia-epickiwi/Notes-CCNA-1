@@ -200,4 +200,16 @@ L'encapsulation des données par la couche 2 s'appelle le *verouillage de la tra
 
 ![Verouillage de la trame](img/verrtrame.png)
 
-A suivre :wink:
+* **Indication de début et de fin** Elles permettent d'identifier le début et la fin de la trame. Tant que la fin n'est pas atteinte, le déstinataire attends d'autres données.
+* **Adressage** Le noeud source et de destination
+* **Type** Le protocol de couche 3 utilisé dans les données
+* **Contrôle** Une zone prévue pour vérifier la qualité du service de réseau et utilisé pour donner la priorité a certains méssages
+* **Detection des érreurs** un champ permettant de verifier qu'uncune érreur n'est survenue
+
+Les Trames diffère selon le protocole de couche 2 utilisé en fonction de l'emplacement du réseau et de son étendue. Ainsi on peut retrouver :
+
+* Ethernet
+* 802.11 sans fil
+* PPP (Point-To-Point protocol)
+* HDLC
+* FrameRelay
