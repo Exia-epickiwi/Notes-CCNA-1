@@ -73,5 +73,5 @@ Pour permettre une bonne transmission, les commutateurs sont munis de mémoire t
 * **Axé sur les ports** Les trames sont stockés dans les files d'attente associés à chaque port entrant et sortant; les donnes sont trasmises des que le port se libère
 * **Mémoire partagée** Un seul mémoire reprend toutes les trames et le port de destination est alloué dynamiquement
 
-Le protocol ethernet peut fonctionner en semi-duplex ou en duplex integral, lros d'une connexion aun commutateur ou un autre périphérique, les deux périphériques échanges pour choisir le meill moyen de transmission en fonction du système offrant la meilleur bande passante. Si on ne s'acorede pas on risque beaucoup de collisions sur le canal.
+Le protocol ethernet peut fonctionner en semi-duplex ou en duplex integral, lros d'une connexion aun commutateur ou un autre périphérique, les deux périphériques échanges pour choisir le meill moyen de transmission en fonction du système offrant la meilleur bande passante. Si on ne s'acorede pas on risque beaucoup de collisions sur le canal provenant du système en semi-duplex.
 
