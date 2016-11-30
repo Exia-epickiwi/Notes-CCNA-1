@@ -46,9 +46,20 @@ La trame ethernet se présente comme suit, sa taille peut varier entre 64 et 1.5
 
 ### Adresse MAC
 
-#### Késsécé l'hexa ?
-
 L'hexadécimale est le système d'ecriture des adresses MAC et des adresses IP. Il se présente comme une système de nombre de 0 a 9 et de A a F dont les équivalences sont faites dans le tableau ci dessous.
 
 ![Table d'equivalence hexadecimal](img/hexa.png)
+
+On représente une adresse MAC en regroupant les caractères hexadécimaux par paire et en les séparant par des `-` ou des `:` ou bien par le regroupement par 4 et la séparation par des `.`
+
+> Exemple :
+> 00-05-9A-3C-78-00
+> 00:05:9A:3C:78:00
+> 0005.9A3C.7800
+
+Une adresse MAC est constituée de deux parties de 24 Bits, l'une définie par la IEEE et propre a chaque constructeur et une autre laissée au choix du constructeur. Ainsi, on est assuré qu'une adresse MAc est unique au niveau mondial. Ce système est appelé *OUI* pour Organizationally Unique Identifier.
+
+Le plus souvent l'adresse MAc est gravée dans la mémoire morte de la carte réseau, elle est ainsi dite rémanente (BIA). On peut toutefois la changer logiciellement dans le système d'exploitation. Lors du démarrage, cette adressé rémanente est stockée dans la mémoire vive pour etre utilisée.
+
+Quand un paquet attein la carte réseau, la carte réseau compare l'adresse MAC de destination par rapport a celle stoquée en mémoire vive et interprète le paquet s'il est la destination.
 
