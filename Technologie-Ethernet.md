@@ -81,5 +81,5 @@ Un autre point sur lequel s'accorder est le type de cable utilisé. Pour eviter 
 
 Si l'adresse IP de destination n'appartiens pas au réseau actuel, la machine l'envoie automatiquement a la passerelle, une machine de couche 3 permettant de faire la liaison avec un réseau distant.
 
-Pour associer une adresse IP auxs adresses MAc le long tu chemin on tulise le protocole ARP.
+Pour associer une adresse IP auxs adresses MAc le long tu chemin on utilise le protocole ARP permettant de résoudre les adresses MAC et de tenir une table de mappage.
 
