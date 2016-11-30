@@ -177,10 +177,9 @@ La topologie d'un réseau est son organisation des périphériques qu'il contien
 ### Topologies LAN
 
 * **Étoile** Chacue périphérique final est relié à un périphérique intermedietre central; Cette topologie présente une facilité de mise en place et d'evolution; elle est donc tres utilisée
-* 
 
 ![Topologies LAN](img/topologiesLAN.png)
 
 A suivre :wink:
 
-=====>4.3.1.4<====
+=====>4.4.3.1<====
