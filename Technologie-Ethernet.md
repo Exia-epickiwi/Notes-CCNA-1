@@ -99,4 +99,4 @@ Pour afficher la table de mappage on peut utiliser la commande `show ip arp` sur
 
 Si de nombreuses demandes ARP sont diffusés en même temps sur un réseau a faible bande passante cela peut inonder le réseau, mais ce genre de perte de performances reste minimes.
 
-Certains pirates peuvent se faire passer pour un autre périphérique en répondant à certaines requètes ARP qui ne lui sont pas destinées et ainsi empoisonner la table de mappage du client.
+Certains pirates peuvent se faire passer pour un autre périphérique en répondant à certaines requètes ARP qui ne lui sont pas destinées et ainsi empoisonner la table de mappage du périphérique.
