@@ -167,11 +167,19 @@ La topologie d'un réseau est son organisation des périphériques qu'il contien
 
 ### Topologies WAN
 
-* **Poit à point** La topologie la plus simple composée d'une connexion permanente entre deux points
+* **Poit à point** La topologie la plus simple composée d'une connexion permanente entre deux points; Le système n'ayant pas a verifier que l'hote recherché soit bien connecté, leprotocol de transmission peut etre tres simple
+* **Point à point logique** Sensiblement la même que le point a point physique sauf que la liaison n'est pas physique mais au travers d'un réseau, ce qui ne change pas la topologie car les deux machines sont spécifiquement connèctés entre elles
 * **Hub and Spoke** La version WAN de la topologie LAN en étoile. Un point central conncete un certain nombre de point périphériques.
 * **Maillée** Une topologie permettant une haute disponibilité mais impliquant que chacun des points 
 
 ![Topologies WAN](img/topologiesWAN.png)
+
+### Topologies LAN
+
+* **Étoile** Chacue périphérique final est relié à un périphérique intermedietre central; Cette topologie présente une facilité de mise en place et d'evolution; elle est donc tres utilisée
+* 
+
+![Topologies LAN](img/topologiesLAN.png)
 
 A suivre :wink:
 
