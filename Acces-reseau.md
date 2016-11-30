@@ -196,6 +196,6 @@ Sur un réseau semi-duplex, on met en place un système de gestion des conflits 
 
 La couche liaison de données encapsule les données précédemment encapsulés par les autres couches dans une trame composé d'en-têtes, des données et d'une queue de bande. Tout les protocoles de cette couche suivent ce système, seul diffère la taille de ces éléments en fonction de l'environnement. En effet, plus des informations sont successible d'être perdues plus il faut d'informations pour les reconstituer et ainsi de plus grands en-têtes et donc un débit moins important.
 
-L'encapsulation des données par la couche 2 s'appelle le *verouillage de la trame* 
+L'encapsulation des données par la couche 2 s'appelle le *verouillage de la trame*
 
 A suivre :wink:
