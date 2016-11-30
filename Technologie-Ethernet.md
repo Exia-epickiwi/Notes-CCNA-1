@@ -43,3 +43,7 @@ La trame ethernet se présente comme suit, sa taille peut varier entre 64 et 1.5
 > * 0x800 pour IPv4
 > * 0x86DD pour IPv6
 > * 0x806 pour ARP
+
+## Appartai sur l'hexa
+
+![Table d'equivalence hexadecimal](img/hexa.png)
