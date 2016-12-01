@@ -6,3 +6,4 @@ Un résumé du cour de découverte des réseaux cisco
 * [Chapitre 3 : Protocoles et communication réseau](./protocoles-et-communication-réseau.md)
 * [Chapitre 4 : Accés réseau](./Acces-reseau.md)
 * [Chapitre 5 : Téchnologie Ethernet](./Technologie-Ethernet.md)
+* [Chapitre 6 : Couche réseau](./Couche-reseau.md)
