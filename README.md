@@ -7,3 +7,4 @@ Un résumé du cour de découverte des réseaux cisco
 * [Chapitre 4 : Accés réseau](./Acces-reseau.md)
 * [Chapitre 5 : Téchnologie Ethernet](./Technologie-Ethernet.md)
 * [Chapitre 6 : Couche réseau](./Couche-reseau.md)
+* [Chapitre 7 : Adressage IP](./Adressage-ip.md)
