@@ -11,4 +11,4 @@ Pour éfféctuer la conversion, il faut commencer par comprendre la notation pon
 Une adresse IPv6 est longue de 128 Bits et est représentée comme une suite d'enesembles de 4 signes hexadécimaux appelés segments. Pour réduire cette adresse o peut : 
 
 * **Omettre les 0 au debut des degments** ainsi chaque segment est réduit. Cette regle ne s'applique pas aux zéros de fin de segment, ainsi, il y a toujours au moins un signe sur un segments
-* **On peut omettre** un seul fois dans une adresse **une séquence complète** de 0 par les `:`
+* **On peut omettre** un seul fois dans une adresse **une séquence complète** de 0 par les `::` ainsi si 3 segments de 0 complets se suivent, on peut les remplacer par ``
