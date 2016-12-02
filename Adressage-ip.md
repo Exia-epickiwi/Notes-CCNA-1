@@ -15,7 +15,7 @@ Une adresse IPv6 est longue de 128 Bits et est représentée comme une suite d'e
 
 Les adresses IPv6 permettent la mise en place d'un monodiffusion mais aussi d'une multidiffusion pouvant etre utilisée pour la diffusion. par l'utilisation de plusieurs types d'adresses
 
-* **Monodiffusion globale** Une adresse IP unique au niveau mondial permettant de communiquer avec une autre machine quelque soit son réseau. Une adresse de diffusion globale, se compose d'un préfixe de routage global attribué par le FAI, d'un identifiant de sous réseau le positionnant dans les sous réseaux d'une entreprise par exemple et enfin un identifiatn d'interface équivalent a la partie hote d'une adresse IPv4
+* **Monodiffusion globale** Une adresse IP unique au niveau mondial permettant de communiquer avec une autre machine quelque soit son réseau. Une adresse de diffusion globale, se compose d'un préfixe de routage global (48  its) attribué par le FAI, d'un identifiant de sous réseau (16 Bits) le positionnant dans les sous réseaux d'une entreprise par exemple et enfin un identifiant d'interface (64 bits) équivalent a la partie hote d'une adresse IPv4
 * **Link-Local (FE80::/10)** Une adresse IP utilisable uniquement dans un réseau local et ne pouvant être utilisée hors de celui ci. Les adresses de ce réseau sont définies sur une plage `FE80::/10`
 * **Bouclage (::1/128)** Une adresse IP permettant de contacter sa propre machine
 * **local unique** Une plage d'adresse réservée pour le local permettant une communication dans un même réseau local
