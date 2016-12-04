@@ -8,3 +8,5 @@ Un résumé du cour de découverte des réseaux cisco
 * [Chapitre 5 : Téchnologie Ethernet](./Technologie-Ethernet.md)
 * [Chapitre 6 : Couche réseau](./Couche-reseau.md)
 * [Chapitre 7 : Adressage IP](./Adressage-ip.md)
+* [Chapitre 8 : Segmentation des réseaux IP en sous-réseaux](./Segmentation-des-reseaux-en-sous-reseaux.md)
+* [Chapitre 9 : Couche transport](./Couche-transport.md)
