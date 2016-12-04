@@ -17,3 +17,5 @@ la messagerie email fait intervenir 3 protocoles SMTP, IMAP et POP permettant d'
 Le protocol SMTP permet d'envoyer des emails sur le port 25 par defaut. le serveur SMTP recoi un email bien formaté a envoyer, il essaye alors de s'executer. Si il n'arrive pas a se connècter au serveur destinataire, il place le message en file d'attente. Si il n'arrive finalement pas a l'envoyer, il le renvoie au destinateire comme non délivrable.
 
 Un serveur POP attends sur le port 110 une connexion du client. Des que la connexion est éfféctuée, les messages sont supprimés et téléchargés chez le client. POP ne stocke pas le messages contrairement a IMAP. Lors d'une connexion, les messages sont copiés et restent sur le serveur. L'utilisateur eut aussi organiser ses messages selon une hierarchie de dossiers.
+
+> Pour DNS et DHCP, voir les CERs associés
