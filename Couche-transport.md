@@ -14,3 +14,22 @@ Il existe deux types de protocoles utilisés sur la couche transport et présent
 
 Le protocole TCP a pour objectiof d'etablire une connexion permettant de verifier la connectivité entre l'hote de depart et d'arrivée, de garantire la livraison par une acheminement fieble (accusé de reception), de livrer les données dans le bon ordre et enfin de controler le flux de donnés pour qu'il corresponde aux exigences du support de transmission.
 
+Pour arriver a cela, le protocol inclue les en-têtes suivants :
+
+* **Port source et port destination (32Bits)** permettant de definir l'application avec laquelle communiquer
+* **Numéro d'ordre (32 Bits)** permettant la réorganisation des données
+* **Numéro d'accusé de reception (32 Bits)** permettant d'indiquer la reception des données
+* **Longeure d'en-tête (4 bits)** La taille des ten-têtes TCP
+* **Plage réservée (6 Bits)**
+* **Controle (6 bits)** Indiquant l'objectif du segment
+* **Taille de la fenetre (16 bits)** Le nombre de segments acceptés en même temps
+* **Somme de contrôle (16 bits)** utilisé pour controler les érreurs du segment
+* **Urgent (16 bits)** indique si un paquet est urgent
+
+## UDP
+
+Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit réduire au minimum son ajout de données ou l'envoie de segments superflux. Ainsi l'en-tête UDP ne se compose que de 8 Octets comprenant :
+
+* **Port source et destination (32 bits)**
+* **Longeure de données (16 bits)**
+* **Somme de controle (16 bits)**
