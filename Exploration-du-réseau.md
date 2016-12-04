@@ -6,6 +6,8 @@ Aujourd'hui, la communication rapide et éfficace est tres importante dans notre
 
 Il existe tout types de réseaux qu'ils soient humain ou informatiques. Les réseau sont alors utiles pour partager et opérer à l'echelle personnel mais aussi à l'echelle de l'entreprise.
 
+Aujourd'hui on utilise le reseau informatique pour de multiples usages on le nomme donc réseau convergé
+
 ## Clients et serveurs
 
 Tout les ordinateurs et machines utilisant le réseau sont des hotes (aussi appelés périphériques finaux). Les serveurs sont logiciels qui mettent a disposition leurs services. les clients sont des logiciels permettant de demander des informations aux serveurs pour les qu'elles soient utilisés par l'utilisateur.
