@@ -67,6 +67,16 @@ Ces connexions sont orchéstrés par l'en tête de controle pouvant prendre comm
 
 Pour recoonstituer les données dans le bon ordre, un numéro permettant de les réordonnés est conclu lors de la connexion, ce numéro initial appelé ISN est un nombre aléatoire servant de base a toute la connexion.
 
+Pour eviter d'accuser la récéption de toute les segments, on met en place un taille de fenetre tant la taille maximale de données que peut recevoire le serveur sans avoir besoin d'un accusé de récéption. Rien n'empeche le erveur d'accuser la récéption avant.
+
+Le protocole TCP inclue un système de gestion de l'encombrement du réseau permettant d'optimiser les transferts. Ainsi le client peut réduire le numbre d'octets avant l'accusé de reception pour fluidifier le réseau.
+
+> Exemples : Applications utilisant TCP
+> * HTTP
+> * FTP
+> * SMTP
+> * Telnet
+
 ## UDP
 
 Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit réduire au minimum son ajout de données ou l'envoie de segments superflux. Ainsi l'en-tête UDP ne se compose que de 8 Octets comprenant :
@@ -74,3 +84,15 @@ Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit r�
 * **Port source et destination (32 bits)**
 * **Longeure de données (16 bits)**
 * **Somme de controle (16 bits)**
+
+Le protocole UDP malgré sa simplicité reste utile et plus ou moins fiable. En effet, si aucune reponse n'est recu durant un certain temps, les paquets envoyés au depart sont réenvoyés.
+
+Le protocole UDP ne fournis pas de sytstème permettant de réassembler les données, il sont simplement reassemblés dans l'ordre dans lequel ils sont arrivés. Dans le cadre de ce protocole les données sont séparés en **datagrammes**. Si l'ordre est important pour l'application, c'est a elle de les reordonner.
+
+> Exmples : Applications utilisant UDP
+> * DHCP
+> * DNS
+> * SNMP
+> * TFTP
+> * VoIP
+> * Television sur IP
