@@ -50,6 +50,23 @@ Pour fermer un connexion, on procède comme suit :
 2. Le serveur accuse récéption et envoie un segment de fin (Requète ACK et FIN)
 3. Le client accuse récéption du segment fin (Requète ACK)
 
+Chaque connexion TCP se déroule en 3 etapes :
+
+1. On vérifie que le périuphérique de destination est bien présent
+2. On s'assure que le périphérique de destination dispose d'une apllication sur le port défini
+3. On informe le périphérique de la demande de connexion
+
+Ces connexions sont orchéstrés par l'en tête de controle pouvant prendre comme valeurs :
+
+* **URG** Paquet urgent
+* **ACK** Accusé de récéption
+* **PSH** Fonction push
+* **RST** Reinitialiser la connexion
+* **SYN** Syncronisation des numeros de séquence
+* **FIN** Abscence de données de l'expéditeur (fin de connexion)
+
+Pour recoonstituer les données dans le bon ordre, un numéro permettant de les réordonnés est conclu lors de la connexion, ce numéro initial appelé ISN est un nombre aléatoire servant de base a toute la connexion.
+
 ## UDP
 
 Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit réduire au minimum son ajout de données ou l'envoie de segments superflux. Ainsi l'en-tête UDP ne se compose que de 8 Octets comprenant :
