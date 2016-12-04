@@ -44,6 +44,12 @@ Pour éfféctuer une connexion, 3 etapes sont requises.
 2. Le srveur accuse récéption et demande uyne connexion vers le client (requète SYN et ACK)
 3. Le client accusé récéption de la connexion depuis le serveur (requète ACK)
 
+Pour fermer un connexion, on procède comme suit :
+
+1. Le client envoie une requète de fin (requète FIN)
+2. Le serveur accuse récéption et envoie un segment de fin (Requète ACK et FIN)
+3. Le client accuse récéption du segment fin (Requète ACK)
+
 ## UDP
 
 Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit réduire au minimum son ajout de données ou l'envoie de segments superflux. Ainsi l'en-tête UDP ne se compose que de 8 Octets comprenant :
