@@ -19,3 +19,5 @@ Le protocol SMTP permet d'envoyer des emails sur le port 25 par defaut. le serve
 Un serveur POP attends sur le port 110 une connexion du client. Des que la connexion est éfféctuée, les messages sont supprimés et téléchargés chez le client. POP ne stocke pas le messages contrairement a IMAP. Lors d'une connexion, les messages sont copiés et restent sur le serveur. L'utilisateur eut aussi organiser ses messages selon une hierarchie de dossiers.
 
 > Pour DNS et DHCP, voir les CERs associés
+
+Le protocole FTP permet le transfert de fichiers, il utilise deux connexions, l'une pour le controle des flux (port 21) et l'autre pour l'envoie de fichiers (20).
