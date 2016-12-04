@@ -33,3 +33,11 @@ Le protocole UDP est bien plus simple car il a vocation a etre rapide et doit r�
 * **Port source et destination (32 bits)**
 * **Longeure de données (16 bits)**
 * **Somme de controle (16 bits)**
+
+## Ports
+
+La gestion des ports permettent a plusieurs applications de communiquer sur le même système. Pour se faire on attribue un port a chaque application pour cmmuniquer. Un port **source** et un port **destination**. Avec l'adresse IP et le port, on a toutes les informations pour se faire communiquer deux applications précises sur deux systèmes distants. Il existe différents types de numerots de ports :
+
+* **Ports réservés (0-1023)** permettant a des applications standards de communquer
+* **Port enregistrés (1024-49151)** enregistrablme aupres de l'IANA par des entreprises permettant de normaliser les ports utilisés
+* **Ports privés ou dynamiques (49152-65535)** ports attribués dynamiquement par un hote por permettre un conexion dans les deux sens
