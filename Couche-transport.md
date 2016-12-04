@@ -41,7 +41,7 @@ Pour arriver a cela, le protocol inclue les en-têtes suivants :
 Pour éfféctuer une connexion, 3 etapes sont requises.
 
 1. Le client demande une connexion au serveur (requète SYN)
-2. Le srveur accuse récéption et demande uyne connexion vers le client (requète SYN,ACK)
+2. Le srveur accuse récéption et demande uyne connexion vers le client (requète SYN et ACK)
 3. Le client accusé récéption de la connexion depuis le serveur (requète ACK)
 
 ## UDP
